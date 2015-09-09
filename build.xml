@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="php-jenkins-example" default="full-build">
+ <property name="basedir" value="."/>
  <!-- Use this when the tools are managed by Composer in ${basedir}/vendor/bin -->
  <property name="pdepend" value="${basedir}/vendor/bin/pdepend"/>
  <property name="phpcpd"  value="${basedir}/vendor/bin/phpcpd"/>
