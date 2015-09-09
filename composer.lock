@@ -569,7 +569,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Silex/zipball/a95bd16873c127f62db5cc658b9897256242a18b",
+                "url": "https://api.github.com/repos/silexphp/Silex/zipball/7b095c09e41b093745e2a841ce4b3524d4dabe52",
                 "reference": "a95bd16873c127f62db5cc658b9897256242a18b",
                 "shasum": ""
             },
