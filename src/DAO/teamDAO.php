@@ -2,7 +2,7 @@
 
 namespace Mila\DAO;
 
-class teamDAO
+final class teamDAO implements DAOInterface
 {
     /*
      * @var \Doctrine\DBAL\Connection
