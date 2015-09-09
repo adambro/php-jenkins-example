@@ -15,4 +15,13 @@ $app->get('/hello/{name}', function ($name) use ($app) {
     return 'Hello '.$app->escape($name);
 });
 
+$app->get('/teams', function () use ($app) {
+
+    $dao = new \Mila\DAO\teamDAO($app['db']);
+    var_dump($dao->fetchAll());
+
+    return true;
+});
+
+
 return $app;
