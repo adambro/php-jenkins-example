@@ -26,9 +26,10 @@ $app->get('/hello/{name}', function ($name) use ($app) {
 $app->get('/teams', function () use ($app) {
 
     $dao = new \Mila\DAO\teamDAO($app['db']);
-    var_dump($dao->fetchAll());
-
-    return true;
+    
+    return $app['twig']->render('teams.twig', array(
+        'teams' => $dao->fetchAll()
+    ));
 });
 
 
