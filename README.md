@@ -7,5 +7,5 @@ Clone repo, remove irrelevant directories and Silex app.
 
     git clone https://github.com/adambro/php-jenkins-example.git
     rm -r .git/ db/ src/ tests/ www/ composer.lock
-    composer remove silex/silex doctrine/dbal symfony/twig-bridge
+    composer remove silex/silex doctrine/dbal symfony/twig-bridge twbs/bootstrap
     composer update
