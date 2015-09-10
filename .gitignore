@@ -1,2 +1,9 @@
 /nbproject/private/
 /vendor/
+cache.properties
+
+/build/api
+/build/coverage
+/build/logs
+/build/pdepend
+/build/phpdox
