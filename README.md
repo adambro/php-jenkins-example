@@ -10,4 +10,7 @@ Clone repo, remove irrelevant directories and Silex app.
     composer remove silex/silex doctrine/dbal symfony/twig-bridge twbs/bootstrap
     composer update
 
-Essentially you get the barebones of a PHP project in git. The most important part is wiring between various QA tools (phpmd, phpcpd, phpunit) with their counterpart Jenkins plugins. Relevant directories (like `./build/`) and files (like `.gitignore` or `phpunit.xml.dist`) are left intact.
+Essentially you get the barebones of a PHP project in git. The most important part 
+is wiring between various QA tools (phpmd, phpcpd, phpunit) with their counterpart 
+Jenkins plugins. Relevant directories (like `./build/`) and files (like `.gitignore` 
+or `phpunit.xml.dist`) are left intact.
