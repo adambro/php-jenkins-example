@@ -11,16 +11,25 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     ),
 ));
 
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+    'twig.path' => array(
+        __DIR__ . '/View'
+    )
+));
+
 $app->get('/hello/{name}', function ($name) use ($app) {
-    return 'Hello '.$app->escape($name);
+    return $app['twig']->render('hello.twig', array(
+        'name' => $name
+    ));
 });
 
 $app->get('/teams', function () use ($app) {
 
     $dao = new \Mila\DAO\teamDAO($app['db']);
-    var_dump($dao->fetchAll());
-
-    return true;
+    
+    return $app['twig']->render('teams.twig', array(
+        'teams' => $dao->fetchAll()
+    ));
 });
 
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Teams</h1>
+        <hr>
+
+        <table class="table">
+            <tr>
+                <th>Lp.</th>
+                <th>Code</th>
+                <th>Team</th>
+            </tr>
+            {% for team in teams %}
+                <tr>
+                    <td>{{loop.index}}</td>
+                    <td>{{team.key}}</td>
+                    <td>{{team.title}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
