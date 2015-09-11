@@ -21,4 +21,9 @@ final class teamDAO implements DAOInterface
     {
         return $this->dbCon->fetchAll('SELECT * FROM teams');
     }
+
+    public function fetchById($id)
+    {
+        return $this->dbCon->fetchAssoc("SELECT * FROM teams WHERE id={$id}");
+    }
 }
