@@ -25,6 +25,14 @@ $app->get('/', function () use ($app) {
     ));
 });
 
+$app->get('/event/{id}', function ($id) use ($app) {
+    $eventDao = new \Mila\DAO\eventDAO($app['db']);
+
+    return $app['twig']->render('event.twig', array(
+        'event' => $eventDao->fetchById($id)
+    ));
+});
+
 $app->get('/hello/{name}', function ($name) use ($app) {
     return $app['twig']->render('hello.twig', array(
         'name' => $name

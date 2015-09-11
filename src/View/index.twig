@@ -16,7 +16,7 @@
             {% for event in events %}
                 <tr>
                     <td>{{loop.index}}</td>
-                    <td>{{event.key}}</td>
+                    <td><a href="event/{{event.id}}">{{event.key}}</a></td>
                     <td>{{event.start_at}}</td>
                 </tr>
             {% endfor %}
