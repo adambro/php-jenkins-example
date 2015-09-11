@@ -17,6 +17,14 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     )
 ));
 
+$app->get('/', function () use ($app) {
+    $eventDao = new \Mila\DAO\eventDAO($app['db']);
+
+    return $app['twig']->render('index.twig', array(
+        'events' => $eventDao->fetchAll()
+    ));
+});
+
 $app->get('/hello/{name}', function ($name) use ($app) {
     return $app['twig']->render('hello.twig', array(
         'name' => $name
