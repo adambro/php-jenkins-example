@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "acfe9354673e0e69404bb9bc9a992c75",
+    "hash": "b6af762ced48d00a17b1f269fd04de6f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -569,7 +569,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Silex/zipball/7b095c09e41b093745e2a841ce4b3524d4dabe52",
+                "url": "https://api.github.com/repos/silexphp/Silex/zipball/42f199cc9697bd240d642d28634e9fea08e0af79",
                 "reference": "a95bd16873c127f62db5cc658b9897256242a18b",
                 "shasum": ""
             },
@@ -1205,6 +1205,51 @@
                 "instantiate"
             ],
             "time": "2015-06-14 21:17:01"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "dff239267fd1befa1cd40430c9ed12591aa720ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/dff239267fd1befa1cd40430c9ed12591aa720ca",
+                "reference": "dff239267fd1befa1cd40430c9ed12591aa720ca",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2015-05-02 15:40:40"
         },
         {
             "name": "pdepend/pdepend",
@@ -2893,6 +2938,48 @@
             "time": "2015-08-24 07:13:45"
         },
         {
+            "name": "theseer/directoryscanner",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theseer/DirectoryScanner.git",
+                "reference": "b1406a99f5e4b1761c84d9e98127c03871bb7b0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/DirectoryScanner/zipball/b1406a99f5e4b1761c84d9e98127c03871bb7b0e",
+                "reference": "b1406a99f5e4b1761c84d9e98127c03871bb7b0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A recursive directory scanner and filter",
+            "time": "2014-11-25 14:27:49"
+        },
+        {
             "name": "theseer/fdomdocument",
             "version": "1.6.1",
             "source": {
@@ -2931,6 +3018,102 @@
             "description": "The classes contained within this repository extend the standard DOM to use exceptions at all occasions of errors instead of PHP warnings or notices. They also add various custom methods and shortcuts for convenience and to simplify the usage of DOM.",
             "homepage": "https://github.com/theseer/fDOMDocument",
             "time": "2015-05-27 22:58:02"
+        },
+        {
+            "name": "theseer/fxsl",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theseer/fXSL.git",
+                "reference": "a9246376c713156e55c080782d4104bb07d4b899"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/fXSL/zipball/a9246376c713156e55c080782d4104bb07d4b899",
+                "reference": "a9246376c713156e55c080782d4104bb07d4b899",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-xsl": "*",
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An XSL wrapper / extension to the PHP 5.x XSLTProcessor with Exception and extended Callback support",
+            "time": "2014-11-27 20:08:52"
+        },
+        {
+            "name": "theseer/phpdox",
+            "version": "0.8.1.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:theseer/phpdox.git",
+                "reference": "518f91cf59ee492fcbc1300ef9aca2720c027052"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theseer/phpdox/zipball/518f91cf59ee492fcbc1300ef9aca2720c027052",
+                "reference": "518f91cf59ee492fcbc1300ef9aca2720c027052",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-iconv": "*",
+                "ext-mbstring": "*",
+                "ext-tokenizer": "*",
+                "ext-xsl": "*",
+                "nikic/php-parser": "=1.3.0",
+                "php": ">=5.3.3",
+                "phpunit/php-timer": ">=1.0.6",
+                "theseer/directoryscanner": ">=1.3.0",
+                "theseer/fdomdocument": ">=1.6.1",
+                "theseer/fxsl": ">=1.1"
+            },
+            "bin": [
+                "phpdox"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Arne Blankerts",
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A fast Documentation generator for PHP Code using standard technology (SRC, DOCBLOCK, XML and XSLT) with event based processing",
+            "time": "2015-07-09 18:46:38"
         }
     ],
     "aliases": [],
