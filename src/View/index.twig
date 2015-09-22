@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" >
+    </head>
+    <body>
+        <h1>Events</h1>
+        <hr>
+
+        <table class="table">
+            <tr>
+                <th>Lp.</th>
+                <th>Event</th>
+                <th>Date</th>
+            </tr>
+            {% for event in events %}
+                <tr>
+                    <td>{{loop.index}}</td>
+                    <td><a href="event/{{event.id}}">{{event.key}}</a></td>
+                    <td>{{event.start_at}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+    <footer>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+    </footer>
+</html>

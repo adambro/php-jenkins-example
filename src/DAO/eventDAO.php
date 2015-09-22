@@ -2,7 +2,7 @@
 
 namespace Mila\DAO;
 
-final class teamDAO implements DAOInterface
+final class eventDAO implements DAOInterface
 {
     /*
      * @var \Doctrine\DBAL\Connection
@@ -19,11 +19,11 @@ final class teamDAO implements DAOInterface
 
     public function fetchAll()
     {
-        return $this->dbCon->fetchAll('SELECT * FROM teams');
+        return $this->dbCon->fetchAll('SELECT * FROM events');
     }
 
     public function fetchById($id)
     {
-        return $this->dbCon->fetchAssoc("SELECT * FROM teams WHERE id={$id}");
+        return $this->dbCon->fetchAssoc("SELECT * FROM events WHERE id={$id}");
     }
 }
