@@ -72,12 +72,10 @@
 
    <fileset dir="${basedir}/src">
     <include name="**/*.php" />
-    <modified />
    </fileset>
 
    <fileset dir="${basedir}/tests">
     <include name="**/*.php" />
-    <modified />
    </fileset>
   </apply>
 
@@ -212,7 +210,7 @@
          unless="phpunit.done"
          depends="prepare"
          description="Run unit tests with PHPUnit">
-  <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
+  <exec executable="${phpunit}" returnProperty="result.phpunit" taskname="phpunit">
    <arg value="--configuration"/>
    <arg path="${basedir}/phpunit.xml.dist"/>
   </exec>
@@ -246,13 +244,14 @@
  </target>
 
  <target name="-check-failure">
-  <fail message="PHPUnit did not finish successfully">
-   <condition>
+   <if>
     <not>
      <equals arg1="${result.phpunit}" arg2="0"/>
     </not>
-   </condition>
-  </fail>
+    <then>
+     <fail message="PHPUnit did not finish successfully"/>
+    </then>
+   </if>
  </target>
 </project>
 
