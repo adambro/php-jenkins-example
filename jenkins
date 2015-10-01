@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Script invoked by Jenkins job. It builds project from ground-up every time.
+
+# install QA tools and project dependencies
+php composer.phar install
+
+# use Phing from QA tools vendor (require-dev)
+# use DefaultLogger to avoid ANSI escape sequences in Console Output
+./vendor/bin/phing full-build  -logger phing.listener.DefaultLogger
