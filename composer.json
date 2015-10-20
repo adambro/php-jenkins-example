@@ -1,9 +1,9 @@
 {
     "require": {
-        "silex/silex": "~2.0@dev",
         "doctrine/dbal": "^2.5",
         "symfony/twig-bridge": "~2.3",
-        "twbs/bootstrap": "v4.0.0-alpha"
+        "twbs/bootstrap": "v4.0.0-alpha",
+        "silex/silex": "~1.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8",
