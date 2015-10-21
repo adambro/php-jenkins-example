@@ -14,3 +14,7 @@ Essentially you get the barebones of a PHP project in git. The most important pa
 is wiring between various QA tools (phpmd, phpcpd, phpunit) with their counterpart 
 Jenkins plugins. Relevant directories (like `./build/`) and files (like `.gitignore` 
 or `phpunit.xml.dist`) are left intact.
+
+# License
+
+The code is released to public domain using Unlicense <http://unlicense.org>
