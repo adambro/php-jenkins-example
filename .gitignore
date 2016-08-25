@@ -7,3 +7,7 @@ cache.properties
 /build/logs
 /build/pdepend
 /build/phpdox
+
+# each dev can have it's own phpunit config here
+phpunit.xml
+
