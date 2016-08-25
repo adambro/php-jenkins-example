@@ -1,0 +1,3 @@
+# Show function name, not class, in git diff header
+*.php diff=php
+
