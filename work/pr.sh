@@ -7,6 +7,7 @@
 # REVIEWER="username";
 source $(dirname $0)/pr-user.sh
 
+REPO="username/reponame"
 BRANCH=`git rev-parse --abbrev-ref HEAD`
 TITLE=`git log -1 --format=%s`
 
@@ -18,7 +19,7 @@ read -d '' JSON << EOF
              "name": "$BRANCH"
          },
          "repository": {
-             "full_name": "parkeon-ondemand/azimutserver"
+             "full_name": "$REPO"
          }
      },
      "destination": {
@@ -35,7 +36,7 @@ read -d '' JSON << EOF
  }
 EOF
 
-URL=https://bitbucket.org/api/2.0/repositories/parkeon-ondemand/azimutserver/pullrequests
+URL=https://bitbucket.org/api/2.0/repositories/$REPO/pullrequests
 RESPONSE=`curl --silent -X POST -H "Content-Type: application/json" -u $CREDENTIALS $URL -d "$JSON"`
 
 # Display URL to newly created PR
