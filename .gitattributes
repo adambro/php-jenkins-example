@@ -1,3 +1,5 @@
 # Show function name, not class, in git diff header
 *.php diff=php
 
+# avoid merge conflicts
+CHANGELOG.md merge=union
